@@ -30,7 +30,7 @@
       <li>API to retrieve the EPG (electronic program guide) for a channel</li>
     </ul>
   </section>
-  {% if site.product_short != 'Video Cloud' %}
+  {% if site.product_short != 'Video Cloud' and site.product_short != 'Beacon Classic' %}
 	<section class="bcls-section">
 		<h2 id="workflow_overview">Workflow overview</h2>
 		<p>There are four parts to creating a Cloud Playout channel and adding it to your {{ site.product_short }} app:</p>
@@ -39,6 +39,18 @@
 			<li>In <strong>{{ site.product_short }} Classic</strong>, create a new {{ site.product_short }} channel that uses the Cloud Playout channel as its source.</li>
       <li>In <strong>{{ site.product_short }} Studio</strong>, add the channel to a playlist.</li>
       <li>In <strong>{{ site.product_short }} Studio</strong>, add the playlist to page.</li>
+		</ol>
+		<p>These tasks are detailed in the <a href="#Related_topics">Related topics</a></p>
+	</section>
+  {% elsif site.product_short == 'Beacon Classic' %}
+	<section class="bcls-section">
+		<h2 id="workflow_overview">Workflow overview</h2>
+		<p>There are four parts to creating a Cloud Playout channel and adding it to your {{ site.product_short }} app:</p>
+		<ol class="bcls-tasklist-restart">
+			<li>In <strong>Video Cloud Studio</strong>, create the channel.</li>
+			<li>In <strong>{{ site.product_short }}</strong>, create a new {{ site.product_short }} channel that uses the Cloud Playout channel as its source.</li>
+      <li>In <strong>{{ site.product_short }}</strong>, add the channel to a playlist.</li>
+      <li>In <strong>{{ site.product_short }}</strong>, add the playlist to page.</li>
 		</ol>
 		<p>These tasks are detailed in the <a href="#Related_topics">Related topics</a></p>
 	</section>
