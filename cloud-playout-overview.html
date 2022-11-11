@@ -5,7 +5,7 @@
     <h2 id="Introduction">Introduction</h2>
     <p>Brightcove Cloud Playout is a Studio module that enables you to program a scheduled playout of items from your VOD catalogue, combined with live feeds, and stream it as a Linear Channel all with the reliability and scalability of Brightcove Live.</p>
     {% if site.product_short != 'Video Cloud' %}
-		<p>You can then use the Cloud Playout channel as a {{ site.product_short }} Channel by entering information about it in creating a <a href="/channels/{{ site.product_short }}-channels/creating-a-channel.html">{{ site.product_short }} Channel</a>. One major advantage to using Cloud Playout channels is that you will not need to find and integrate a 3rd party EPG provider, since an EPG service is built into Cloud Playout.</p>
+    <p>You can then use the Cloud Playout channel as a {{ site.product_short }} Channel by entering information about it in creating a <a href="/channels/{{ site.product_short }}-channels/creating-a-channel.html">{{ site.product_short }} Channel</a>. One major advantage to using Cloud Playout channels is that you will not need to find and integrate a 3rd party EPG provider, since an EPG service is built into Cloud Playout.</p>
     {% endif %}
     <p>Cloud Playout offers a powerful, end-to-end solution for channels of scheduled programming, including:</p>
     <ul>
@@ -31,29 +31,29 @@
     </ul>
   </section>
   {% if site.product_short != 'Video Cloud' and site.product_short != 'Beacon Classic' %}
-	<section class="bcls-section">
-		<h2 id="workflow_overview">Workflow overview</h2>
-		<p>There are four parts to creating a Cloud Playout channel and adding it to your {{ site.product_short }} app:</p>
-		<ol class="bcls-tasklist-restart">
-			<li>In <strong>{{ site.product_short }} Studio</strong>, create the channel.</li>
-			<li>In <strong>{{ site.product_short }} Classic</strong>, create a new {{ site.product_short }} channel that uses the Cloud Playout channel as its source.</li>
+  <section class="bcls-section">
+    <h2 id="workflow_overview">Workflow overview</h2>
+    <p>There are four parts to creating a Cloud Playout channel and adding it to your {{ site.product_short }} app:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In <strong>{{ site.product_short }} Studio</strong>, create the channel.</li>
+      <li>In <strong>{{ site.product_short }} Classic</strong>, create a new {{ site.product_short }} channel that uses the Cloud Playout channel as its source.</li>
       <li>In <strong>{{ site.product_short }} Studio</strong>, add the channel to a playlist.</li>
       <li>In <strong>{{ site.product_short }} Studio</strong>, add the playlist to page.</li>
-		</ol>
-		<p>These tasks are detailed in the <a href="#Related_topics">Related topics</a></p>
-	</section>
+    </ol>
+    <p>These tasks are detailed in the <a href="#Related_topics">Related topics</a></p>
+  </section>
   {% elsif site.product_short == 'Beacon Classic' %}
-	<section class="bcls-section">
-		<h2 id="workflow_overview">Workflow overview</h2>
-		<p>There are four parts to creating a Cloud Playout channel and adding it to your {{ site.product_short }} app:</p>
-		<ol class="bcls-tasklist-restart">
-			<li>In <strong>Video Cloud Studio</strong>, create the channel.</li>
-			<li>In <strong>{{ site.product_short }}</strong>, create a new {{ site.product_short }} channel that uses the Cloud Playout channel as its source.</li>
+  <section class="bcls-section">
+    <h2 id="workflow_overview">Workflow overview</h2>
+    <p>There are four parts to creating a Cloud Playout channel and adding it to your {{ site.product_short }} app:</p>
+    <ol class="bcls-tasklist-restart">
+      <li>In <strong>Video Cloud Studio</strong>, create the channel.</li>
+      <li>In <strong>{{ site.product_short }}</strong>, create a new {{ site.product_short }} channel that uses the Cloud Playout channel as its source.</li>
       <li>In <strong>{{ site.product_short }}</strong>, add the channel to a playlist.</li>
       <li>In <strong>{{ site.product_short }}</strong>, add the playlist to page.</li>
-		</ol>
-		<p>These tasks are detailed in the <a href="#Related_topics">Related topics</a></p>
-	</section>
+    </ol>
+    <p>These tasks are detailed in the <a href="#Related_topics">Related topics</a></p>
+  </section>
   {% endif %}
   <section class="bcls-section">
     <h2 id="limitations">Limitations</h2>
@@ -61,7 +61,7 @@
     <ul>
       <li>Your videos must be ingested or re-transcoded using a Dynamic Delivery profile and <strong>must have an MP4 rendition</strong>:
         <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-cloudplayout-img/mp4-in-ingest-profile.png" alt="Ingest Profiles with MP4">
+          <img class="bcls-image" src="/assets/images/s-cloudplayout-img/mp4-in-ingest-profile.webp" alt="Ingest Profiles with MP4">
           <figcaption class="bcls-caption--image">Ingest Profiles with MP4</figcaption>
         </figure>
       </li>
@@ -83,7 +83,7 @@
       <li>
         For SSAI-enabled channels, the destination must be set to an ad-enabled RTP live event:
         <figure class="bcls-figure">
-          <img class="bcls-image" src="/assets/images/s-cloudplayout-img/advanced-options-for-live-job.png" alt="Live Settings for SSAI Channel">
+          <img class="bcls-image" src="/assets/images/s-cloudplayout-img/advanced-options-for-live-job.webp" alt="Live Settings for SSAI Channel">
           <figcaption class="bcls-caption--image">Live Settings for SSAI Channel</figcaption>
         </figure>
       </li>
